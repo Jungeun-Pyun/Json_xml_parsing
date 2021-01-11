@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <p>HI</p>
+</head>
+<body>
+    <script>
+
+        const http = new XMLHttpRequest();
+        const url = 'http://127.0.0.1:3000/json';
+        const params = '';
+        http.open('GET', url, true);
+    
+        //send the proper header information along with the request
+        http.setRequestHeader('Content-type', 'text/plain');
+    
+        http.onreadystatechange = function() {
+            if(http.readyState == 4 && http.status == 200) {
+                alert(http.responseText);
+            }
+        }
+    http.send(params);
+    
+    </script>
+    
+</body>
+</html>
