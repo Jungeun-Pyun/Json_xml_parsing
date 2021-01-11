@@ -1,0 +1,18 @@
+{
+   "Name":"Jungeun",
+   "gender":"female",
+   "hobbies": [
+       {
+           "name":"soccer",
+           "level":1
+       },
+       {
+            "name":"jogging",
+            "level":2
+        },
+        {
+            "name":"driving",
+            "level":0
+        }
+   ] 
+}
