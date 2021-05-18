@@ -13,7 +13,7 @@ const port = 3000;
 
 const server = http.createServer((req,res) => {
     // request : client의 요청, response : 서버의 응답
-    //웹 서버 생성 - 클라이언트에서 호출될 때 마다 실행되야 하므로 꺼지면 안됨
+    // 웹 서버 생성 - 클라이언트에서 호출될 때 마다 실행되야 하므로 꺼지면 안됨
     res.statusCode = 200;
     res.setHeader('Contenet-Type', 'text/plain') // header : 전송하는 데이터의 타입등을 규정하는 부분, 보내려는 정보가 text임
     res.end('Hello World\n')
